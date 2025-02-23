@@ -25,42 +25,42 @@ Welcome to the **MERN Stack Bookstore**, a full-fledged e-commerce platform for 
 
 ### 🏠 Home Page
 _Shows featured books, categories, and recommendations._
-![Home Page] "C:\Users\prana\OneDrive\Pictures\Screenshots\Screenshot (21).png"
+![Home Page](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/main_page.png)
 
 ### 🏠 Home Page (Part 2: Top Sellers & Recommended Books)
-![Top Sellers](path/to/top-sellers-screenshot.png)
+![Top Sellers](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/topsellers.png)
 
 ### 🔑 Login Page
 _A secure authentication system for both users and admins._
-![Login Page](path/to/login-screenshot.png)
+![Login Page](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/login_page.png)
 
 ### 🛒 Cart Page
 _Users can review their selected books before checking out._
-![Cart Page](path/to/cart-screenshot.png)
+![Cart Page](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/cart_page.png)
 
 ### ✅ Checkout Page
 _Final step before placing an order._
-![Checkout Page](path/to/checkout-screenshot.png)
+![Checkout Page](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/checkout_page.png)
 
 ### 📦 Orders Page
 _Displays successfully placed orders._
-![Orders Page](path/to/orders-screenshot.png)
+![Orders Page](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/orders_page.png)
 
 ### 🎛️ User Dashboard
 _A personal dashboard for managing orders._
-![User Dashboard](path/to/user-dashboard-screenshot.png)
+![User Dashboard](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/user_dashboard.png)
 
 ### 🔧 Admin Dashboard
 _A secured panel for admins to manage books and inventory._
-![Admin Dashboard](path/to/admin-dashboard-screenshot.png)
+![Admin Dashboard](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/admin_dashboard.png)
 
 ### 📚 Manage Books Page (Admin)
 _An interface to edit and delete books._
-![Manage Books](path/to/manage-books-screenshot.png)
+![Manage Books](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/manage_books.png)
 
 ### ➕ Add New Book Page (Admin)
 _Admins can upload new books to the store._
-![Add Book](path/to/add-book-screenshot.png)
+![Add Book](https://github.com/Pree3105/MyBookStore-MERN-site/blob/main/frontend/src/assets/site_screenshots/add_book.png)
 
 ---
 
@@ -71,4 +71,15 @@ _Admins can upload new books to the store._
    ```sh
    git clone https://github.com/your-username/your-repository.git
    cd your-repository
+🔹 Backend Setup
+   ```sh
+   cd backend
+   npm install
+   npm start
+```
+🔹 Frontend Setup
+   ```sh
+   cd frontend
+   npm install
+   npm start
 
