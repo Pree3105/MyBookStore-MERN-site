@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import Loading from '../../components/Loading';
 import getBaseUrl from '../../utils/baseURL';
 import { MdIncompleteCircle } from 'react-icons/md'
-// import RevenueChart from './RevenueChart';
 
 const Dashboard = () => {
     const [loading, setLoading] = useState(true);
@@ -56,7 +55,7 @@ const Dashboard = () => {
                   </svg>
                 </div>
                 <div>
-                  <span className="block text-2xl font-bold">${data?.totalSales}</span>
+                  <span className="block text-2xl font-bold">₹{data?.totalSales}</span>
                   <span className="block text-gray-500">Total Sales</span>
                 </div>
               </div>
@@ -82,15 +81,8 @@ const Dashboard = () => {
                 </div>
               </div>
             </section>
-            <section className="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6">
-              <div className="flex flex-col md:col-span-2 md:row-span-2 bg-white shadow rounded-lg">
-                <div className="px-6 py-5 font-semibold border-b border-gray-100">The number of orders per month</div>
-                <div className="p-4 flex-grow">
-                  {/* <div className="flex items-center justify-center h-full px-4 py-16 text-gray-400 text-3xl font-semibold bg-gray-100 border-2 border-gray-200 border-dashed rounded-md">
-                  <RevenueChart />
-                  </div> */}
-                </div>
-              </div>
+
+            <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <div className="flex items-center p-8 bg-white shadow rounded-lg">
                 <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-yellow-600 bg-yellow-100 rounded-full mr-6">
                   <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
@@ -126,41 +118,41 @@ const Dashboard = () => {
                   </button>
     
                 </div>
-                <div className="overflow-y-auto" style={{maxHeight: '24rem'}}>
+                <div className="overflow-y-auto" style={{maxHeight: '12rem'}}>
                   <ul className="p-6 space-y-6">
                     <li className="flex items-center">
                       <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
-                        <img src="https://randomuser.me/api/portraits/women/82.jpg" alt="Annette Watson profile picture"/>
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Aarav Sharma profile picture"/>
                       </div>
-                      <span className="text-gray-600">Annette Watson</span>
+                      <span className="text-gray-600">Aarav Sharma</span>
                       <span className="ml-auto font-semibold">9.3</span>
                     </li>
                     <li className="flex items-center">
                       <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
-                        <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Calvin Steward profile picture"/>
+                        <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Ishita Mehtas profile picture"/>
                       </div>
-                      <span className="text-gray-600">Calvin Steward</span>
+                      <span className="text-gray-600">Ishita Mehta</span>
                       <span className="ml-auto font-semibold">8.9</span>
                     </li>
                     <li className="flex items-center">
                       <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
-                        <img src="https://randomuser.me/api/portraits/men/80.jpg" alt="Ralph Richards profile picture"/>
+                        <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Rohan Vermas profile picture"/>
                       </div>
-                      <span className="text-gray-600">Ralph Richards</span>
+                      <span className="text-gray-600">Rohan Verma</span>
                       <span className="ml-auto font-semibold">8.7</span>
                     </li>
                     <li className="flex items-center">
                       <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
-                        <img src="https://randomuser.me/api/portraits/men/79.jpg" alt="Bernard Murphy profile picture"/>
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Bernard Murphy profile picture"/>
                       </div>
-                      <span className="text-gray-600">Bernard Murphy</span>
+                      <span className="text-gray-600">Ananya Iyer </span>
                       <span className="ml-auto font-semibold">8.2</span>
                     </li>
                     <li className="flex items-center">
                       <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
-                        <img src="https://randomuser.me/api/portraits/women/78.jpg" alt="Arlene Robertson profile picture"/>
+                        <img src="https://randomuser.me/api/portraits/men/37.jpg" alt="Kabir Bhatia profile picture"/>
                       </div>
-                      <span className="text-gray-600">Arlene Robertson</span>
+                      <span className="text-gray-600">Kabir Bhatia</span>
                       <span className="ml-auto font-semibold">8.2</span>
                     </li>
                     <li className="flex items-center">
@@ -187,15 +179,9 @@ const Dashboard = () => {
                   </ul>
                 </div>
               </div>
-              <div className="flex flex-col row-span-3 bg-white shadow rounded-lg">
+              {/* <div className="flex flex-col row-span-3 bg-white shadow rounded-lg">
                 <div className="px-6 py-5 font-semibold border-b border-gray-100">Students by type of studying</div>
-                <div className="p-4 flex-grow">
-                  <div className="flex items-center justify-center h-full px-4 py-24 text-gray-400 text-3xl font-semibold bg-gray-100 border-2 border-gray-200 border-dashed rounded-md">Chart</div>
-                </div>
-              </div>
-            </section>
-            <section className="text-right font-semibold text-gray-500">
-              <a href="#" className="text-purple-600 hover:underline">Recreated on Codepen</a> with <a href="https://tailwindcss.com/" className="text-teal-400 hover:underline">Tailwind CSS</a> by Azri Kahar, <a href="https://dribbble.com/shots/10711741-Free-UI-Kit-for-Figma-Online-Courses-Dashboard" className="text-purple-600 hover:underline">original design</a> made by Chili Labs
+              </div> */}
             </section>
     </>
   )

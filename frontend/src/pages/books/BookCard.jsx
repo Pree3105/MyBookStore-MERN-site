@@ -38,7 +38,7 @@ const BookCard = ({book}) => {
                     {/* the ?. is there for optional checking. if that field exists for that book then use it */}
                     <p className="text-gray-600 mb-5">{book?.description.length > 80 ? `${book.description.slice(0, 80)}...` : book?.description}</p>
                     <p className="font-medium mb-5">
-                        ${book?.newPrice} <span className="line-through font-normal ml-2">$ {book?.oldPrice}</span>
+                        ₹ {book?.newPrice} <span className="line-through font-normal ml-2">₹ {book?.oldPrice}</span>
                     </p>
                     <button 
                     onClick={() => handleAddToCart(book)}
